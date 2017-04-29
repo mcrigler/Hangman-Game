@@ -1,0 +1,54 @@
+footer {
+    background-color: #666;
+    color:#ccc;
+    border-top: 5px solid #E82C0C;
+    text-align: center;
+    font-size: 80%;
+    padding: 10px 0;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+
+h3 {
+	font-size: 1.25em;
+	margin-top: 10px;
+}
+
+#user-text{
+	color: #093987;
+}
+
+#user-wrong{
+	color:#87090f;
+}
+
+.logo {
+	width: 125px;
+}
+
+.hangJumbotron {
+	margin: 10px;
+	padding: 10px 60px;
+}
+
+.hangbtn {
+	font-size: 1.75em;
+	padding: 5px 40px;
+	margin: 5px;
+}
+
+.s-hangmanImage {
+	margin: 10px;
+}
+
+.s-hangmanPlaceholder {
+	font-size: 1.75em;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	display: block;
+	border-bottom: 3px;
+}

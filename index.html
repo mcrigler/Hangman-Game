@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Week 3 Homework - Hangman Game">
+      <meta name="keywords" content="Marya, coding, bootcamp, part-time">
+      <meta name="author" content="Marya Crigler">
+<!-- Link to reset Style Sheets -->
+      <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<!-- Link to the Bootstrap CDN -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!-- Link to my customized style sheet -->
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!--  title  -->
+      <title>Hangman MDC</title>  
+   </head>
+   <body>
+      <div class="container">
+   <!-- Row 1 of 3  -->
+         <div class="row">
+         <!-- Col 1 of 2 -->
+            <div class = "col-md-2">
+               <img src="assets/images/logo.jpg" class="img-responsive logo" alt="TV advertising">
+            </div><!-- end Col 1 of 2 -->
+         <!-- Col 2 of 2 -->
+            <div class = "col-md-10">
+               <div class="page-header">
+                  <h1>Hangman <small>- Advertising Slogans</small></h1>
+               </div>  
+            </div>  <!-- end col 2 of 2 -->
+         </div>  <!-- end row 1 of 3  -->
+   <!-- Row 2 of 3  -->
+         <div class = "row">
+         <!-- col 1 of 1 -->
+            <div class="col-md-12">
+               <div class="jumbotron hangJumbotron">
+                  <span id="id-hangmanPlaceholder"  class = "s-hangmanPlaceholder"></span>
+                  <h2>Guess a letter: <span id="user-text"><strong>...Click the Play button to start the round.</strong></span></h2>
+                  <h3>Hint: <span id = "hints"></span></h3>
+                  <h3>Wrong Letters: <span id = "displayWrongLtrs"></span> <span id="user-wrong"></span></h3>
+                  <h3>Guesses Left: <span id = "id-guessesLeft"></span></h3>
+               </div>  <!-- end Jumbotron  -->
+             </div> <!-- end col 1 of 1  -->
+         </div>  <!-- end row 2 of 3  -->
+   <!-- Row 3 of 3  -->
+         <div class = "row">
+         <!-- Col 1 of 3 -->
+            <div class = "col-md-4 col-md-offset-1">
+               <span id="id-hangmanImage">
+                  <img src="assets/images/hm1.jpg" class="img-responsive s-hangmanImage" alt="Hangman Image">
+               </span>
+            </div>  <!-- end col 1 of 3  -->
+         <!-- Col 2 of 3  -->
+            <div class = "col-md-4">
+               <div>
+                  <br><br>
+                  <button type="button" class="btn btn-success hangbtn" onclick="playGame()">Play</button>
+                  <button type="button" class="btn btn-info hangbtn" onclick="showHint()">Hint</button>
+               </div>
+            </div> <!-- end col 2 of 3 -->
+         <!-- Col 3 of 3  -->
+            <div class = "col-md-2">
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <h3 class="panel-title">Scoreboard</h3>
+                  </div>
+                  <div class="panel-body">
+                     <p> Wins: <span id = "id-userWins"> 0 </span></p>
+                     <p> Losses: <span id = "id-userLosses"> 0 </span></p>
+                  </div>
+               </div> <!-- end panel default -->
+            </div>   <!-- end col 3 of 3  -->
+         </div> <!-- End row 3 of 3 -->
+      </div> <!-- end container -->
+   <footer>&copy;Copyright 2017 Marya Crigler
+   </footer>
+
+<!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <!--Hangman game javascript  -->
+   
+     <script type="text/javascript" src="assets/javascript/game.js"> 
+     
+    </script>  
+   </body>
+   </html>  
